@@ -1,0 +1,17 @@
+{
+  "name": "SocialNerds",
+  "version": "1.0.0",
+  "description": "SocialNerds site.",
+  "main": "index.html",
+  "author": "Thanos Korakas <thanoskorakas@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "rimraf": "^2.6.2"
+  }
+}
