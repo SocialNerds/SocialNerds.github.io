@@ -1,0 +1,65 @@
+@import "variables";
+@import "mixins";
+
+body, html {
+  @include no-space;
+  font-family: 'Open Sans', 'Verdana', 'Trebuchet MS', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  @include no-space;
+}
+
+h1 {
+  font-size: $h1_font_size;
+}
+
+.home {
+  width: 100vw;
+  .logo-wrapper {
+    width: 100vw;
+    background-image: url('../../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: $logo_wrapper_height;
+    text-align: center;
+    padding: 4em 0 0 0;
+    h1, p {
+      font-weight: 500;
+      color: $title_color;
+      text-shadow: 1px 1px black;
+    }
+    p {
+      font-size: $slogan_font_size;
+    }
+    .logo {
+      background-image: url('../../images/logo.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: $logo_size;
+      height: $logo_size;
+      margin: 0 auto;
+    }
+  }
+}
+
+.navigation {
+  ul {
+    list-style: none;
+    @include no-space;
+    text-align: center;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        font-size: 1.50em;
+        color: $link_color;
+        padding: 0 5px;
+        @include generic-transition(color);
+        &:hover {
+          color: darken($link_color, 15%)
+        }
+      }
+    }
+  }
+}

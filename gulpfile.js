@@ -8,19 +8,19 @@ const livereload = require('gulp-livereload');
 
 // Compile sass to css for dev.
 gulp.task('sass:dev', () => {
-  return gulp.src('./sass/*.scss')
+  return gulp.src('./styles/sass/*.scss')
   // Initializes sourcemaps.
     .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', sass.logError))
     // Writes sourcemaps into the CSS file.
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./'))
+    .pipe(gulp.dest('./styles/css'))
     .pipe(livereload());
 });
 
 // Compile sass to css for production.
 gulp.task('sass:prod', function () {
-  return gulp.src('./sass/*.scss')
+  return gulp.src('./styles/sass/*.scss')
     .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
@@ -29,12 +29,26 @@ gulp.task('sass:prod', function () {
     .pipe(rename({
       suffix: ".min",
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./styles/css'));
+});
+
+// Reload HTML
+gulp.task('html', function() {
+  return gulp.src('./index.html')
+    .pipe(livereload());
+});
+
+// Reload JS
+gulp.task('js', function() {
+  return gulp.src('./js/main.js')
+    .pipe(livereload());
 });
 
 gulp.task('watch', () => {
   livereload.listen();
-  gulp.watch('./sass/*.scss', ['sass:dev']);
-})
+  gulp.watch('./styles/sass/*.scss', ['sass:dev']);
+  gulp.watch('./index.html', ['html']);
+  gulp.watch('./js/main.js', ['js']);
+});
 
 gulp.task('default', ['watch']);

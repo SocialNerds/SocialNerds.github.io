@@ -1,0 +1,8 @@
+@mixin no-space {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin generic-transition($attr) {
+  transition: $attr 0.5s ease;
+}
