@@ -86,8 +86,8 @@ a {
     li {
       display: inline-block;
       a {
-        font-size: 1.50em;
-        line-height: $menu_height;
+        font-size: 1.25em;
+        line-height: 2em;
         padding: 0 5px;
       }
     }
@@ -164,6 +164,27 @@ a {
 
 .hire {
   background-color: $hire_bg;
+  form {
+    margin: 0 auto;
+    max-width: $form_width;
+    text-align: right;
+    padding: 0 0 $site_generic_margin 0;
+    input[type="email"], input[type="text"], textarea {
+      width: $form_width;
+      display: block;
+      margin: 0 0 $site_generic_margin 0;
+      @include text;
+    }
+    input[type="email"], input[type="text"] {
+      height: 32px;
+      line-height: 32px;
+      padding-left: $site_generic_margin;
+    }
+    input[type="submit"] {
+      margin: 0 0 $site_generic_margin 0;
+      @include button;
+    }
+  }
 }
 
 .social-icons {

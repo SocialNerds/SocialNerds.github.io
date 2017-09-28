@@ -6,3 +6,27 @@
 @mixin generic-transition($attr) {
   transition: $attr 0.5s ease;
 }
+
+@mixin button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background-color: $green;
+  color: white;
+  height: 32px;
+  line-height: 32px;
+  width: 120px;
+  font-size: 1em;
+  padding: 0;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($green, 15%)
+  }
+}
+
+@mixin text {
+  padding-left: 5px;
+  border: 0 none;
+  box-sizing: border-box;
+  font-size: 1.25em;
+}
