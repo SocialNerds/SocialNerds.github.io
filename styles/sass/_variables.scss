@@ -4,16 +4,20 @@
 // Colors.
 $blue: #18a2de;
 $title_color: white;
-$h3_color: #555;
+$text_color: #555;
+$section_intro_color: $text_color;
 $link_color: $blue;
 $about_bg: #eee;
+$video_bg: #484848;
 
 // Sizes.
 $logo_wrapper_height: 400px;
 $logo_size: 100px;
 $h1_font_size: 3.5em;
 $h3_font_size: 2.5em;
+$section_intro_font_size: 1.65em;
 $slogan_font_size: 1.25em;
 $menu_height: 3em;
 $about_max_width: 1000px;
 $site_generic_margin: 0.5em;
+$section_bottom_padding: 2.5em;

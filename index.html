@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,89 +10,107 @@
 
   <link rel="stylesheet" href="/styles/css/style.css">
 </head>
+
 <body>
-<!--[if lt IE 8]>
+  <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<header>
-  <section id="home" class="home">
-    <div class="logo-wrapper">
-      <div class="logo"></div>
-      <h1>SocialNerds</h1>
-      <p>Agile Web Development</p>
+  <header>
+    <section id="home" class="home">
+      <div class="logo-wrapper">
+        <div class="logo"></div>
+        <h1>SocialNerds</h1>
+        <p>Agile Web Development. Maybe we can <a href="#book">help you...</a></p>
+      </div>
+    </section>
+    <nav class="navigation">
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#youtube">YouTube</a>
+        </li>
+        <li>
+          <a href="#hire">Hire us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="about" class="about">
+    <h3>About us</h3>
+    <p class="section-intro">
+      We are into technology and knowledge sharing
+    </p>
+    <div class="about-wrapper">
+      <div>
+        <img src="/images/TK.png" alt="Thanos Korakas">
+        <span>JavaScript, Open source</span>
+      </div>
+      <div>
+        <img src="/images/TN.png" alt="Thanos Nokas">
+        <span>Gamer, Software engineer</span>
+      </div>
+      <div>
+        <img src="/images/GV.png" alt="Giannis Verginis">
+        <span>Farmer, Developer</span>
+      </div>
     </div>
   </section>
-  <nav class="navigation">
-    <ul>
-      <li>
-        <a href="#home">Home</a>
-      </li>
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="#youtube">YouTube</a>
-      </li>
-      <li>
-        <a href="#book">Book us</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<section id="about" class="about">
-  <h3>About us</h3>
-  <div class="about-wrapper">
-    <div>
-    <img src="/images/TK.png" alt="Thanos Korakas">
-    <span>
-      JavaScript, Open source
-    </span>
-  </div>
-  <div>
-    <img src="/images/TN.png" alt="Thanos Nokas">
-    <span>
-      Gamer, Software engineer
-    </span>
-  </div>
-  <div>
-    <img src="/images/GV.png" alt="Giannis Verginis">
-    <span>
-      Farmer, Developer
-    </span>
-  </div>
-  </div>
-</section>
-<section id="youtube" class="youtube">
-  <h3>YouTube</h3>
-  <div class="embed-container">
-    <iframe width="320" height="180" src="https://www.youtube.com/embed/9QhUmYTS_Uc?rel=0&amp;controls=0&amp;showinfo=0"
-            frameborder="0" allowfullscreen></iframe>
-  </div>
-  <div class="embed-container">
-    <iframe width="320" height="180" src="https://www.youtube.com/embed/zaXrOtpOn7U?rel=0&amp;controls=0&amp;showinfo=0"
-            frameborder="0" allowfullscreen></iframe>
-  </div>
-  <div class="embed-container">
-    <iframe width="320" height="180" src="https://www.youtube.com/embed/f1E6Tk8YwaU?rel=0&amp;controls=0&amp;showinfo=0"
-            frameborder="0" allowfullscreen></iframe>
-  </div>
-</section>
-<section id="book" class="book">
-  <h3>Book us for your next amazing project!</h3>
-  <p>Book us to mentor you on Agile, React, Symfony, Laravel, Drupal,
-    Testing methodologies!
-  </p>
-  <form action="https://getsimpleform.com/messages?form_api_token=1abd4ccc5182da1da8eb37603b773b68" method="post">
-    <input type='hidden' name='redirect_to' value='https://socialnerds.github.io?form=submitted' />
-    <input type='email' name='email' required placeholder="Email"/>
-    <input type='text' name='name' required placeholder="Name"/>
-    <textarea name="message" cols="30" rows="10" required></textarea>
-    <input type='submit' value='Send' />
-  </form>
-</section>
-<footer></footer>
-<script src="/js/main.js"></script>
+  <section id="youtube" class="youtube">
+    <h3>YouTube</h3>
+    <p class="section-intro">
+      We are not a team. We are a community! Check out our <a href="https://www.youtube.com/SocialNerdsGR">YouTube channel</a>
+    </p>
+    <div class="youtube-wrapper">
+      <div>
+        <a href="https://www.youtube.com/watch?v=9QhUmYTS_Uc" target="_blank">
+          <img src="/images/agile.png" alt="How to make your projects Agile">
+        </a>
+        <a href="https://www.youtube.com/watch?v=9QhUmYTS_Uc" target="_blank"
+          class="text-link">
+          Start with Agile
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=uCFFS9jxlck&list=PLuswtImoIwq9ZxO6iUKu1K00iKakWfiAL" target="_blank">
+          <img src="/images/react.png" alt="React, full tutorial with MobX">
+        </a>
+        <a href="https://www.youtube.com/watch?v=uCFFS9jxlck&list=PLuswtImoIwq9ZxO6iUKu1K00iKakWfiAL" target="_blank"
+          class="text-link">
+          React, full tutorial
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=f1E6Tk8YwaU" target="_blank">
+          <img src="/images/webmasters.png" alt="Google Webmasters, Analytics, DNS, SMTP">
+        </a>
+        <a href="https://www.youtube.com/watch?v=f1E6Tk8YwaU" target="_blank"
+          class="text-link">
+          Google Webmasters, Analytics, DNS, SMTP
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="hire" class="hire">
+    <h3>Hire us for your amazing project</h3>
+    <p class="section-intro">Let us mentor you on Agile, React, Symfony, Laravel, Drupal, Testing methodologies!
+    </p>
+    <form action="https://getsimpleform.com/messages?form_api_token=1abd4ccc5182da1da8eb37603b773b68" method="post">
+      <input type='hidden' name='redirect_to' value='https://socialnerds.github.io?form=submitted' />
+      <input type='email' name='email' required placeholder="Email" />
+      <input type='text' name='name' required placeholder="Name" />
+      <textarea name="message" cols="30" rows="10" required></textarea>
+      <input type='submit' value='Send' />
+    </form>
+  </section>
+  <footer></footer>
+  <script src="/js/main.js"></script>
 </body>
+
 </html>
