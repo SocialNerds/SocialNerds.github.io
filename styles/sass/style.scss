@@ -8,29 +8,36 @@ body, html {
 
 h1, h2, h3, h4, h5 {
   @include no-space;
+  font-weight: 300;
 }
 
 h1 {
   font-size: $h1_font_size;
 }
 
+h3 {
+  font-size: $h3_font_size;
+  text-align: center;
+  color: $h3_color;
+  padding: $site_generic_margin 0;
+}
+
 .home {
-  width: 100vw;
+  width: vw;
   .logo-wrapper {
-    width: 100vw;
+    width: vw;
     background-image: url('../../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: $logo_wrapper_height;
     text-align: center;
-    padding: 4em 0 0 0;
+    padding: 4em 0;
     h1, p {
-      font-weight: 500;
       color: $title_color;
       text-shadow: 1px 1px black;
     }
     p {
       font-size: $slogan_font_size;
+      margin: 0;
     }
     .logo {
       background-image: url('../../images/logo.png');
@@ -53,13 +60,69 @@ h1 {
       a {
         text-decoration: none;
         font-size: 1.50em;
+        line-height: $menu_height;
         color: $link_color;
         padding: 0 5px;
+        font-weight: 300;
         @include generic-transition(color);
         &:hover {
           color: darken($link_color, 15%)
         }
       }
+    }
+  }
+}
+
+.about {
+  background-color: $about_bg;
+  .about-wrapper {
+    text-align: center;
+    padding-bottom: $h3_font_size;
+    div {
+      display: inline-block;
+      max-width: 30em;
+      position: relative;
+      border-radius: 50%;
+      margin: 0 $site_generic_margin/2;
+      img {
+        max-width: 100%;
+        border-radius: 50%;
+        z-index: 2;
+        position: relative;
+        @include generic-transition(all);
+        &:hover {
+          opacity: 0;
+          filter: alpha(opacity=0);
+        }
+      }
+      span {
+        max-width: 100%;
+        border-radius: 50%;
+        z-index: 1;
+        background-color: white;
+        width: 15em;
+        height: 15em;
+        line-height: 15em;
+        top: 0;
+        left: 0;
+        font-size: 2em;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.youtube {
+  embed-container {
+    position: relative; padding-bottom: 56.25%;
+    height: 0; overflow: hidden; max-width: 100%; 
+    iframe, object, embed {
+      position: absolute; 
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }
