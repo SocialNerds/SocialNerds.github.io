@@ -118,7 +118,7 @@ a {
       }
       span, a {
         position: absolute;
-        padding-top: 45%;
+        padding-top: 40%;
         max-width: 100%;
         border-radius: 50%;
         z-index: 1;
@@ -126,9 +126,8 @@ a {
         width: 15em;
         top: 0;
         left: 0;
-        bottom: 0;
+        bottom: 5px; // This is really stupid. Somewhere, I am missing 5px.
         font-size: 2em;
-        z-index: 1;
       }
     }
   }
@@ -159,6 +158,24 @@ a {
           padding: $site_generic_margin;
         }
       }
+    }
+  }
+}
+
+.hire {
+  background-color: $hire_bg;
+}
+
+.social-icons {
+  background-color: $blue;
+  text-align: center;
+  a {
+    color: white;
+    line-height: 1.3em;
+    font-size: $social_link_size;
+    padding: 0 0.2em;
+    &:hover {
+      color: $grey;
     }
   }
 }

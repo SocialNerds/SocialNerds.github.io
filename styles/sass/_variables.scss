@@ -1,14 +1,17 @@
 // Imports.
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=greek');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
 // Colors.
 $blue: #18a2de;
 $title_color: white;
 $text_color: #555;
+$grey: #ccc;
 $section_intro_color: $text_color;
 $link_color: $blue;
 $about_bg: #eee;
 $video_bg: #484848;
+$hire_bg: #eee;
 
 // Sizes.
 $logo_wrapper_height: 400px;
@@ -21,3 +24,5 @@ $menu_height: 3em;
 $about_max_width: 1000px;
 $site_generic_margin: 0.5em;
 $section_bottom_padding: 2.5em;
+$social_line_height: 3em;
+$social_link_size: 3em;
