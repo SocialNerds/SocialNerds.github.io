@@ -192,9 +192,9 @@ input[type="submit"] {
   #message {
     display: none;
     margin: $site_generic_margin auto;
-    max-width: $form_width;
     font-size: $form_message_font_size;
     border: 1px solid $green;
+    max-width: 20em;
     @include generic-transition(all);
     span {
       display: inline-block;
