@@ -50,7 +50,7 @@ a {
 }
 
 input[type="email"], input[type="text"], textarea {
-  width: $form_width;
+  width: 100%;
   display: block;
   margin: 0 0 $site_generic_margin 0;
   @include text;
@@ -61,7 +61,6 @@ input[type="email"], input[type="text"], textarea {
 input[type="email"], input[type="text"] {
   height: 32px;
   line-height: 32px;
-  padding-left: $site_generic_margin;
 }
 input[type="submit"] {
   margin: 0 0 $site_generic_margin 0;
