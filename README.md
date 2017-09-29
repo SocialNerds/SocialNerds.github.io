@@ -12,6 +12,7 @@
 * Fotis Alexandridis
 * Antonis Giotakis
 * Grigoris Tsountas
+* Natalia Georgiadou
 
 ## Run it
 1. Install [Node.js](https://nodejs.org/)
