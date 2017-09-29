@@ -49,6 +49,25 @@ a {
   }
 }
 
+input[type="email"], input[type="text"], textarea {
+  width: $form_width;
+  display: block;
+  margin: 0 0 $site_generic_margin 0;
+  @include text;
+  &:focus {
+    outline: none;
+  }
+}
+input[type="email"], input[type="text"] {
+  height: 32px;
+  line-height: 32px;
+  padding-left: $site_generic_margin;
+}
+input[type="submit"] {
+  margin: 0 0 $site_generic_margin 0;
+  @include button;
+}
+
 .home {
   width: vw;
   .logo-wrapper {
@@ -169,20 +188,20 @@ a {
     max-width: $form_width;
     text-align: right;
     padding: 0 0 $site_generic_margin 0;
-    input[type="email"], input[type="text"], textarea {
-      width: $form_width;
+  }
+  #message {
+    display: none;
+    margin: $site_generic_margin auto;
+    max-width: $form_width;
+    font-size: $form_message_font_size;
+    border: 1px solid $green;
+    @include generic-transition(all);
+    span {
+      display: inline-block;
+      padding: $site_generic_margin;
+    }
+    &.show {
       display: block;
-      margin: 0 0 $site_generic_margin 0;
-      @include text;
-    }
-    input[type="email"], input[type="text"] {
-      height: 32px;
-      line-height: 32px;
-      padding-left: $site_generic_margin;
-    }
-    input[type="submit"] {
-      margin: 0 0 $site_generic_margin 0;
-      @include button;
     }
   }
 }
