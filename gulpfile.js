@@ -26,9 +26,6 @@ gulp.task('sass:prod', function () {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(rename({
-      suffix: ".min",
-    }))
     .pipe(gulp.dest('./styles/css'));
 });
 

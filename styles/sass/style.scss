@@ -11,6 +11,9 @@ html {
   font-family: 'Open Sans', 'Verdana', 'Trebuchet MS', sans-serif;
   font-weight: 300;
   color: $text_color;
+
+  background: url('../../images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 h1,
@@ -68,18 +71,13 @@ input[type="submit"] {
 }
 
 .home {
-  width: vw;
   .logo-wrapper {
-    width: vw;
-    background-image: url('../../images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     text-align: center;
-    padding: 4em 0;
+    padding: 10em 0;
     h1,
     p {
       color: $title_color;
-      text-shadow: 1px 1px black;
+      @include text-shadow-mixin;
     }
     p {
       font-size: $slogan_font_size;
@@ -101,12 +99,21 @@ input[type="submit"] {
     list-style: none;
     @include no-space;
     text-align: center;
+    &:hover {
+      background-color: $navigation_bg;
+      @include generic-transition(background-color);
+    }
     li {
       display: inline-block;
       a {
         font-size: 1.25em;
         line-height: 2em;
         padding: 0 5px;
+        color: white;
+        @include text-shadow-mixin;
+        &:hover {
+          color: $blue;
+        }
       }
     }
   }
@@ -152,6 +159,11 @@ input[type="submit"] {
 }
 
 .youtube {
+  background-color: $youtube_bg;
+  h3, p {
+    color: white;
+    @include text-shadow-mixin;
+  }
   .youtube-wrapper {
     text-align: center;
     padding-bottom: $h3_font_size;
@@ -160,7 +172,7 @@ input[type="submit"] {
       max-width: 20em;
       position: relative;
       margin: $site_generic_margin/2;
-      background-color: $video_bg;
+      @include text-shadow-mixin;
       a {
         color: white;
         display: inline-block;
@@ -168,7 +180,7 @@ input[type="submit"] {
           max-width: 100%;
           @include generic-transition(all);
           &:hover {
-            opacity: 0.9;
+            opacity: 0.7;
             filter: alpha(opacity=90);
           }
         }
