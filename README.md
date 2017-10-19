@@ -13,6 +13,9 @@
 * Antonis Giotakis
 * Grigoris Tsountas
 * Natalia Georgiadou
+* Thanos Korakas
+* Thanos Nokas
+* Giannis Verginis
 
 ## Run it
 1. Install [Node.js](https://nodejs.org/)
