@@ -117,10 +117,26 @@ input[type="submit"] {
 }
 
 .about {
-  background-color: $about_bg;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  .about-background {
+    background-image: url('../../images/about-background.jpg');
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
   .about-wrapper {
+    position: relative;
     text-align: center;
     padding-bottom: $section_bottom_padding;
+    z-index: 3;
+    position: relative;
     div {
       display: inline-block;
       max-width: 20em;
