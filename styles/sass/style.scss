@@ -208,12 +208,22 @@ input[type="submit"] {
 }
 
 .hire {
-  background-color: $hire_bg;
-  form {
-    margin: 0 auto;
-    max-width: $form_width;
-    text-align: right;
-    padding: 0 0 $site_generic_margin 0;
+  background-image: url('../../images/hire-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  .form-wrapper {
+    @include box-shadow-mixin;
+    padding: $site_generic_margin;
+    display: inline-block;
+    margin: $site_generic_margin;
+    background-color: white;
+    form {
+      margin: 0 auto;
+      max-width: $form_width;
+      text-align: right;
+      padding: 0 0 $site_generic_margin 0;
+    }
   }
   #message {
     display: none;

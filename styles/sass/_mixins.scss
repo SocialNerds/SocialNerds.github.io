@@ -29,8 +29,13 @@
   border: 0 none;
   box-sizing: border-box;
   font-size: 1.25em;
+  background-color: $text_background_color;
 }
 
 @mixin text-shadow-mixin {
   text-shadow: 1px 1px black;
+}
+
+@mixin box-shadow-mixin {
+  box-shadow: 1px 1px 15px 0 $text_color;
 }

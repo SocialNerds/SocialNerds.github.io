@@ -73,7 +73,6 @@
         <p>Agile Web Development. Maybe we can <a href="#hire">help you...</a></p>
       </div>
     </section>
-    
   </header>
   <section id="about" class="about">
     <div class="about-background"></div>
@@ -144,13 +143,15 @@
     <div class="message" id="message">
       <span>Thank you! We are looking into this.</span>
     </div>
-    <form action="https://getsimpleform.com/messages?form_api_token=1abd4ccc5182da1da8eb37603b773b68" method="post">
-      <input type='hidden' name='redirect_to' value='https://socialnerds.github.io?form=submitted#hire' />
-      <input type='email' name='email' required placeholder="Email" />
-      <input type='text' name='name' required placeholder="Name" />
-      <textarea placeholder="Tell us what you need" name="message" cols="30" rows="10" required></textarea>
-      <input type='submit' value='Send' />
-    </form>
+    <div class="form-wrapper">
+      <form action="https://getsimpleform.com/messages?form_api_token=1abd4ccc5182da1da8eb37603b773b68" method="post">
+        <input type='hidden' name='redirect_to' value='https://socialnerds.github.io?form=submitted#hire' />
+        <input type='email' name='email' required placeholder="Email" />
+        <input type='text' name='name' required placeholder="Name" />
+        <textarea placeholder="Tell us what you need" name="message" cols="30" rows="10" required></textarea>
+        <input type='submit' value='Send' />
+      </form>
+  </div>
   </section>
   <footer>
     <div class="social-icons">
