@@ -33,7 +33,7 @@
 }
 
 @mixin text-shadow-mixin {
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px 4px black;
 }
 
 @mixin box-shadow-mixin {

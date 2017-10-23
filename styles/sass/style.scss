@@ -11,9 +11,6 @@ html {
   font-family: 'Open Sans', 'Verdana', 'Trebuchet MS', sans-serif;
   font-weight: 300;
   color: $text_color;
-
-  background: url('../../images/background.jpg') no-repeat center center fixed;
-  background-size: cover;
 }
 
 h1,
@@ -47,6 +44,7 @@ a {
   color: $link_color;
   text-decoration: none;
   @include generic-transition(color);
+  text-shadow: none;
   &:hover {
     color: darken($link_color, 15%)
   }
@@ -68,6 +66,29 @@ input[type="email"], input[type="text"] {
 input[type="submit"] {
   margin: 0 0 $site_generic_margin 0;
   @include button;
+}
+
+.video-background-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  .video-background {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto;
+    z-index: -1000; 
+    overflow: hidden;
+  }
 }
 
 .home {
@@ -95,11 +116,11 @@ input[type="submit"] {
 }
 
 .navigation {
+  background-color: $grey;
   ul {
     list-style: none;
     @include no-space;
     text-align: center;
-    background-color: $navigation_bg;
     li {
       display: inline-block;
       a {
@@ -107,9 +128,8 @@ input[type="submit"] {
         line-height: 2em;
         padding: 0 5px;
         color: white;
-        @include text-shadow-mixin;
         &:hover {
-          color: $blue;
+          color: black;
         }
       }
     }
@@ -162,7 +182,6 @@ input[type="submit"] {
 }
 
 .youtube {
-  background-color: $youtube_bg;
   h3, p {
     color: white;
     @include text-shadow-mixin;
@@ -251,7 +270,6 @@ input[type="submit"] {
 }
 
 .created {
-  background-color: $created_bg;
   text-align: center;
   color: $text_color;
   font-size: $created_font_size;
